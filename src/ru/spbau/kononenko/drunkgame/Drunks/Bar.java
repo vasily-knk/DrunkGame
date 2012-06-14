@@ -16,7 +16,7 @@ public class Bar extends Portal {
 
     @Override
     public void update() {
-        if (timeElapsed == spawnFrequency) {
+        if (timeElapsed >= spawnFrequency) {
             if (canSpawn())
                 spawn(new Drunk(field, coord));
             timeElapsed = 0;

@@ -7,9 +7,11 @@ import ru.spbau.kononenko.drunkgame.common.actors.ReturnReportInterface;
 import ru.spbau.kononenko.drunkgame.common.field.field_itself.Coord;
 import ru.spbau.kononenko.drunkgame.common.field.field_itself.Field;
 import ru.spbau.kononenko.drunkgame.drunks.Drunk;
+import ru.spbau.kononenko.drunkgame.drunks.Pillar;
 import ru.spbau.kononenko.drunkgame.rect_field.RectField;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -23,6 +25,7 @@ public class PolicemanTest {
 
     final Coord startCoord = new Coord(5, 5);
     final Coord adjCoord = new Coord(5, 6);
+    final Coord adjCoord2 = new Coord(6, 6);
     final ReturnReportInterface onReturn = new ReturnReportInterface() {
         @Override
         public void report() {
@@ -37,7 +40,9 @@ public class PolicemanTest {
         List<Coord> mockAdj = new ArrayList<Coord>();
         mockAdj.add(adjCoord);
 
-        when(field.getAdjacent(startCoord)).thenReturn(mockAdj);
+        when(field.getAdjacent(startCoord)).thenReturn(Arrays.asList(adjCoord));
+        when(field.getAdjacent(adjCoord)).thenReturn(Arrays.asList(startCoord, adjCoord2));
+        when(field.getAdjacent(adjCoord2)).thenReturn(Arrays.asList(adjCoord));
     }
     
     @Test
@@ -56,14 +61,28 @@ public class PolicemanTest {
     }
     
     @Test
-    public void hasPath() {
-        Coord startCoord1 = new Coord(0, 0);
-        Field field1 = new RectField(10, 10);
-        Drunk drunk = new Drunk(field, new Coord(9, 9));
-        Policeman policeman = new Policeman(field, startCoord1, onReturn, drunk);
+    public void blocked() {
+        Drunk drunk = new Drunk(field, adjCoord2);
+        drunk.fallAsleep();
+        Policeman policeman = new Policeman(field, startCoord, onReturn, drunk);
+
+        //block policeman
+        field.setObject(adjCoord, new Pillar());
         policeman.update();
-        assertNull(field.getObject(startCoord1));
-        
+
+        assertEquals(field.getObject(startCoord), policeman);
     }
-    
+
+    @Test
+    public void hasPath() {
+        Drunk drunk = new Drunk(field, adjCoord2);
+        drunk.fallAsleep();
+        Policeman policeman = new Policeman(field, startCoord, onReturn, drunk);
+
+        policeman.update();
+
+        assertEquals(field.getObject(adjCoord), policeman);
+        assertNull(field.getObject(startCoord));
+    }
+
 }
