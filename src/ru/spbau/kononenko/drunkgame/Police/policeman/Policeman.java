@@ -15,7 +15,7 @@ public class Policeman extends ThereAndBackAgain {
     private FilterInterface<Coord> isVictimLocation = new FilterInterface<Coord>() {
         @Override
         public boolean accept(Coord coord) {
-            return getField().getObject(coord) == victim;
+            return coord.equals(victim.getCoord());
         }
     };
     private FilterInterface<FieldObject> ignoreFilter;

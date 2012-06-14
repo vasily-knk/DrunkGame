@@ -72,6 +72,7 @@ public class Drunk extends Actor implements Arrestable {
 
     public void freeze() {
         isFrozen = true;
+        //kill();
     }
 
     @Override

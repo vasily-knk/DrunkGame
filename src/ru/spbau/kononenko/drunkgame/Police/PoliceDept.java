@@ -36,7 +36,6 @@ public class PoliceDept extends Portal {
     }
 
     private void tryToSendPoliceman(Arrestable target) {
-        policemanIsOut = true;
         if (canSpawn()) {
             ReturnReportInterface onReturn = new ReturnReportInterface() {
                 @Override
@@ -45,6 +44,7 @@ public class PoliceDept extends Portal {
                 }
             };
             spawn(new Policeman(field, coord, onReturn, target));
+            policemanIsOut = true;
         }
     }
 
