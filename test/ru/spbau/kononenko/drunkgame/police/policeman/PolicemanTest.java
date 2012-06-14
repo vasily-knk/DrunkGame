@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.*;
 
@@ -41,11 +42,17 @@ public class PolicemanTest {
     
     @Test
     public void arrestAndReturn() {
-        Drunk mockDrunk = spy(new Drunk(field, adjCoord));
-        mockDrunk.fallAsleep();
-        Policeman policeman = new Policeman(field, startCoord, onReturn, mockDrunk);
+        Drunk drunk = new Drunk(field, adjCoord);
+        drunk.fallAsleep();
+        Policeman policeman = new Policeman(field, startCoord, onReturn, drunk);
+
+        // Drunk arrested
         policeman.update();
-        verify(mockDrunk).arrest(policeman);
+        assertNull(field.getObject(adjCoord));
+
+        // Policeman returned
+        policeman.update();
+        assertNull(field.getObject(startCoord));
     }
     
 }
