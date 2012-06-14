@@ -55,4 +55,15 @@ public class PolicemanTest {
         assertNull(field.getObject(startCoord));
     }
     
+    @Test
+    public void hasPath() {
+        Coord startCoord1 = new Coord(0, 0);
+        Field field1 = new RectField(10, 10);
+        Drunk drunk = new Drunk(field, new Coord(9, 9));
+        Policeman policeman = new Policeman(field, startCoord1, onReturn, drunk);
+        policeman.update();
+        assertNull(field.getObject(startCoord1));
+        
+    }
+    
 }
