@@ -37,9 +37,6 @@ public class PolicemanTest {
     public void setUp() throws Exception {
         field = spy(new RectField(10, 10));
 
-        List<Coord> mockAdj = new ArrayList<Coord>();
-        mockAdj.add(adjCoord);
-
         when(field.getAdjacent(startCoord)).thenReturn(Arrays.asList(adjCoord));
         when(field.getAdjacent(adjCoord)).thenReturn(Arrays.asList(startCoord, adjCoord2));
         when(field.getAdjacent(adjCoord2)).thenReturn(Arrays.asList(adjCoord));

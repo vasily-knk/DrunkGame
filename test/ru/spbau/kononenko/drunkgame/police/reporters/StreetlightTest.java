@@ -28,6 +28,7 @@ public class StreetlightTest {
     
     @Test
     public void noOneFound() {
+        Drunk drunk = new Drunk(field, new Coord(5, 6));
         assertNull(streetlight.search());
     }
 
