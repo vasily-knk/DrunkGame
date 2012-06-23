@@ -2,11 +2,11 @@ package ru.spbau.kononenko.drunkgame.rect_field;
 
 import org.junit.Before;
 import org.junit.Test;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Coord;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Field;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.FieldFreeException;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.FieldOccupiedException;
-import ru.spbau.kononenko.drunkgame.drunks.Bottle;
+import ru.spbau.kononenko.drunkgame.common.field.Coord;
+import ru.spbau.kononenko.drunkgame.common.field.Field;
+import ru.spbau.kononenko.drunkgame.common.field.FieldFreeException;
+import ru.spbau.kononenko.drunkgame.common.field.FieldOccupiedException;
+import ru.spbau.kononenko.drunkgame.pdrunks.Bottle;
 
 import java.util.List;
 

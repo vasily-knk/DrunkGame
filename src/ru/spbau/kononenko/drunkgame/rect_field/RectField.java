@@ -1,7 +1,7 @@
 package ru.spbau.kononenko.drunkgame.rect_field;
 
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Coord;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Field2D;
+import ru.spbau.kononenko.drunkgame.common.field.Coord;
+import ru.spbau.kononenko.drunkgame.common.field.Field2D;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObject;
 
 import java.util.ArrayList;

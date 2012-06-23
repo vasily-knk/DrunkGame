@@ -4,8 +4,8 @@ import ru.spbau.kononenko.drunkgame.common.algorithms.filters.FilterInterface;
 import ru.spbau.kononenko.drunkgame.common.algorithms.filters.OneOfFilter;
 import ru.spbau.kononenko.drunkgame.common.algorithms.pathfinders.BFSPathFinder;
 import ru.spbau.kononenko.drunkgame.common.algorithms.pathfinders.PathFinder;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Coord;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Field;
+import ru.spbau.kononenko.drunkgame.common.field.Coord;
+import ru.spbau.kononenko.drunkgame.common.field.Field;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObject;
 
 public abstract class ThereAndBackAgain extends Actor {

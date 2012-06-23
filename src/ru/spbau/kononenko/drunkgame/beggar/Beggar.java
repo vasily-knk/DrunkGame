@@ -3,9 +3,9 @@ package ru.spbau.kononenko.drunkgame.beggar;
 import ru.spbau.kononenko.drunkgame.common.actors.ReturnReportInterface;
 import ru.spbau.kononenko.drunkgame.common.actors.ThereAndBackAgain;
 import ru.spbau.kononenko.drunkgame.common.algorithms.filters.FilterInterface;
-import ru.spbau.kononenko.drunkgame.drunks.Bottle;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Coord;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Field;
+import ru.spbau.kononenko.drunkgame.common.field.Coord;
+import ru.spbau.kononenko.drunkgame.common.field.Field;
+import ru.spbau.kononenko.drunkgame.pdrunks.Bottle;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObject;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObjectProperty;
 

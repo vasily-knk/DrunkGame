@@ -2,8 +2,8 @@ package ru.spbau.kononenko.drunkgame.common.algorithms.pathfinders;
 
 import ru.spbau.kononenko.drunkgame.common.algorithms.BFS;
 import ru.spbau.kononenko.drunkgame.common.algorithms.filters.FilterInterface;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Coord;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Field;
+import ru.spbau.kononenko.drunkgame.common.field.Coord;
+import ru.spbau.kononenko.drunkgame.common.field.Field;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObject;
 
 import java.util.HashMap;
@@ -13,7 +13,7 @@ public class BFSPathFinder implements PathFinder {
     private Coord dst;
 
     @Override
-    public Coord getNext(final Field field, final Coord src, final FilterInterface<Coord> dstFilter, 
+    public Coord getNext(final Field field, final Coord src, final FilterInterface<Coord> dstFilter,
                          final FilterInterface<FieldObject> ignore) {
         
         parents.clear();

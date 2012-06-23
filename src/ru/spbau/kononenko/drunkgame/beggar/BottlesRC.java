@@ -2,16 +2,16 @@ package ru.spbau.kononenko.drunkgame.beggar;
 
 import ru.spbau.kononenko.drunkgame.common.actors.Portal;
 import ru.spbau.kononenko.drunkgame.common.actors.ReturnReportInterface;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Coord;
-import ru.spbau.kononenko.drunkgame.common.field.field_itself.Field;
-import ru.spbau.kononenko.drunkgame.game.DynamicControl;
+import ru.spbau.kononenko.drunkgame.common.field.Coord;
+import ru.spbau.kononenko.drunkgame.common.field.Field;
+import ru.spbau.kononenko.drunkgame.game.DynamicManager;
 
 public class BottlesRC extends Portal {
     private int respawnTime;
     boolean beggarIsOut = false;
     int timeElapsed = 0;
 
-    public BottlesRC(Field field, Coord coord, DynamicControl dynamicControl, int respawnTime) {
+    public BottlesRC(Field field, Coord coord, DynamicManager dynamicControl, int respawnTime) {
         super(field, coord, dynamicControl);
         this.respawnTime = respawnTime;
     }
