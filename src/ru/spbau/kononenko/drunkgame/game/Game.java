@@ -4,11 +4,11 @@ import ru.spbau.kononenko.drunkgame.beggar.BottlesRC;
 import ru.spbau.kononenko.drunkgame.common.actors.DynamicObject;
 import ru.spbau.kononenko.drunkgame.common.field.Coord;
 import ru.spbau.kononenko.drunkgame.common.field.Field;
-import ru.spbau.kononenko.drunkgame.pdrunks.Bar;
-import ru.spbau.kononenko.drunkgame.pdrunks.Pillar;
+import ru.spbau.kononenko.drunkgame.drunks.Bar;
+import ru.spbau.kononenko.drunkgame.drunks.Pillar;
 import ru.spbau.kononenko.drunkgame.hex_field.HexField;
-import ru.spbau.kononenko.drunkgame.ppolice.PoliceDept;
-import ru.spbau.kononenko.drunkgame.ppolice.reporters.Streetlight;
+import ru.spbau.kononenko.drunkgame.police.PoliceDept;
+import ru.spbau.kononenko.drunkgame.police.reporters.Streetlight;
 
 import java.util.LinkedList;
 import java.util.List;

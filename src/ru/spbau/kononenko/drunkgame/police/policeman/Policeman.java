@@ -1,4 +1,4 @@
-package ru.spbau.kononenko.drunkgame.ppolice.policeman;
+package ru.spbau.kononenko.drunkgame.police.policeman;
 
 import ru.spbau.kononenko.drunkgame.common.actors.ReturnReportInterface;
 import ru.spbau.kononenko.drunkgame.common.actors.ThereAndBackAgain;
@@ -8,7 +8,7 @@ import ru.spbau.kononenko.drunkgame.common.field.Coord;
 import ru.spbau.kononenko.drunkgame.common.field.Field;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObject;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObjectProperty;
-import ru.spbau.kononenko.drunkgame.ppolice.arrestable.Arrestable;
+import ru.spbau.kononenko.drunkgame.police.arrestable.Arrestable;
 
 public class Policeman extends ThereAndBackAgain {
     private Arrestable victim;

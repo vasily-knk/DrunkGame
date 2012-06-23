@@ -1,13 +1,13 @@
-package ru.spbau.kononenko.drunkgame.ppolice;
+package ru.spbau.kononenko.drunkgame.police;
 
 import ru.spbau.kononenko.drunkgame.common.actors.ReturnReportInterface;
 import ru.spbau.kononenko.drunkgame.common.field.Coord;
 import ru.spbau.kononenko.drunkgame.common.field.Field;
 import ru.spbau.kononenko.drunkgame.game.DynamicManager;
 import ru.spbau.kononenko.drunkgame.common.actors.Portal;
-import ru.spbau.kononenko.drunkgame.ppolice.arrestable.Arrestable;
-import ru.spbau.kononenko.drunkgame.ppolice.policeman.Policeman;
-import ru.spbau.kononenko.drunkgame.ppolice.reporters.ArrestableReporter;
+import ru.spbau.kononenko.drunkgame.police.arrestable.Arrestable;
+import ru.spbau.kononenko.drunkgame.police.policeman.Policeman;
+import ru.spbau.kononenko.drunkgame.police.reporters.ArrestableReporter;
 
 import java.util.LinkedList;
 import java.util.List;

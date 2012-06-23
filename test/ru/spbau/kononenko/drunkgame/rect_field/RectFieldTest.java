@@ -6,7 +6,7 @@ import ru.spbau.kononenko.drunkgame.common.field.Coord;
 import ru.spbau.kononenko.drunkgame.common.field.Field;
 import ru.spbau.kononenko.drunkgame.common.field.FieldFreeException;
 import ru.spbau.kononenko.drunkgame.common.field.FieldOccupiedException;
-import ru.spbau.kononenko.drunkgame.pdrunks.Bottle;
+import ru.spbau.kononenko.drunkgame.drunks.Bottle;
 
 import java.util.List;
 

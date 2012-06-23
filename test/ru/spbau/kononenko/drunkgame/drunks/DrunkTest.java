@@ -1,4 +1,4 @@
-package ru.spbau.kononenko.drunkgame.pdrunks;
+package ru.spbau.kononenko.drunkgame.drunks;
 
 import org.junit.Before;
 import org.junit.Test;

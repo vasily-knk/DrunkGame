@@ -1,4 +1,4 @@
-package ru.spbau.kononenko.drunkgame.ppolice.arrestable;
+package ru.spbau.kononenko.drunkgame.police.arrestable;
 
 public class ArrestableNotFoundException extends RuntimeException {
     public ArrestableNotFoundException(String s) {

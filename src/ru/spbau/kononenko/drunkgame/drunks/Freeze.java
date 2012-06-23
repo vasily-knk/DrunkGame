@@ -1,4 +1,4 @@
-package ru.spbau.kononenko.drunkgame.pdrunks;
+package ru.spbau.kononenko.drunkgame.drunks;
 
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObjectProperty;
 

@@ -1,10 +1,10 @@
-package ru.spbau.kononenko.drunkgame.ppolice.reporters;
+package ru.spbau.kononenko.drunkgame.police.reporters;
 
 import org.junit.Before;
 import org.junit.Test;
 import ru.spbau.kononenko.drunkgame.common.field.Coord;
 import ru.spbau.kononenko.drunkgame.common.field.Field;
-import ru.spbau.kononenko.drunkgame.pdrunks.Drunk;
+import ru.spbau.kononenko.drunkgame.drunks.Drunk;
 import ru.spbau.kononenko.drunkgame.rect_field.RectField;
 
 import static org.mockito.Matchers.any;

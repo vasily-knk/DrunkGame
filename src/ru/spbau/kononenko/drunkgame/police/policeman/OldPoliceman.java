@@ -1,4 +1,4 @@
-package ru.spbau.kononenko.drunkgame.ppolice.policeman;
+package ru.spbau.kononenko.drunkgame.police.policeman;
 
 import ru.spbau.kononenko.drunkgame.common.actors.Actor;
 import ru.spbau.kononenko.drunkgame.common.actors.ReturnReportInterface;
@@ -7,8 +7,8 @@ import ru.spbau.kononenko.drunkgame.common.algorithms.pathfinders.OldPathFinder;
 import ru.spbau.kononenko.drunkgame.common.field.Coord;
 import ru.spbau.kononenko.drunkgame.common.field.Field;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObjectProperty;
-import ru.spbau.kononenko.drunkgame.ppolice.arrestable.Arrestable;
-import ru.spbau.kononenko.drunkgame.ppolice.arrestable.ArrestableNotFoundException;
+import ru.spbau.kononenko.drunkgame.police.arrestable.Arrestable;
+import ru.spbau.kononenko.drunkgame.police.arrestable.ArrestableNotFoundException;
 
 import java.util.Queue;
 

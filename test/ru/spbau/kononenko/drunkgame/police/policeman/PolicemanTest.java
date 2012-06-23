@@ -1,4 +1,4 @@
-package ru.spbau.kononenko.drunkgame.ppolice.policeman;
+package ru.spbau.kononenko.drunkgame.police.policeman;
 
 
 import org.junit.Before;
@@ -6,8 +6,8 @@ import org.junit.Test;
 import ru.spbau.kononenko.drunkgame.common.actors.ReturnReportInterface;
 import ru.spbau.kononenko.drunkgame.common.field.Coord;
 import ru.spbau.kononenko.drunkgame.common.field.Field;
-import ru.spbau.kononenko.drunkgame.pdrunks.Drunk;
-import ru.spbau.kononenko.drunkgame.pdrunks.Pillar;
+import ru.spbau.kononenko.drunkgame.drunks.Drunk;
+import ru.spbau.kononenko.drunkgame.drunks.Pillar;
 import ru.spbau.kononenko.drunkgame.rect_field.RectField;
 
 import java.util.Arrays;

@@ -1,13 +1,13 @@
-package ru.spbau.kononenko.drunkgame.ppolice.reporters;
+package ru.spbau.kononenko.drunkgame.police.reporters;
 
 import ru.spbau.kononenko.drunkgame.common.field.Coord;
 import ru.spbau.kononenko.drunkgame.common.field.Field;
-import ru.spbau.kononenko.drunkgame.pdrunks.Drunk;
+import ru.spbau.kononenko.drunkgame.drunks.Drunk;
 import ru.spbau.kononenko.drunkgame.common.algorithms.BFS;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObject;
 import ru.spbau.kononenko.drunkgame.common.field.objects.FieldObjectProperty;
 import ru.spbau.kononenko.drunkgame.common.field.objects.SelfAwareFieldObject;
-import ru.spbau.kononenko.drunkgame.ppolice.arrestable.Arrestable;
+import ru.spbau.kononenko.drunkgame.police.arrestable.Arrestable;
 
 public class Streetlight extends SelfAwareFieldObject implements ArrestableReporter {
     private final int radius;
